@@ -38,7 +38,7 @@ data/esm/overall_emb.zip (лежат на кагле)
 Показаны лучшие чем метрики в статье [https://www.mdpi.com/1422-0067/23/18/10798](https://www.mdpi.com/1422-0067/23/18/10798), на тех же данных. В статье авторы  явно кодировали физико-химические характеристики белков, показывает что эмбединги работают лучше. 
                               <p style="text-align: center;">Метрики моей модели</p> 
 ![image](https://user-images.githubusercontent.com/92908421/215409775-363ee8a2-576a-4d78-a451-be4b997c8bd9.png)
-                             __Метрики модели авторов из статьи__
+                             <p style="text-align: center;">Метрики модели авторов из статьи</p>  
 ![image](https://user-images.githubusercontent.com/92908421/215410115-4e3f5dea-79fb-4068-8493-d6972dfe8775.png)
 
 
