@@ -29,7 +29,7 @@ data/esm/overall_emb.zip (лежат на кагле)
 
  4. **Обучение ML моделей.** 
 
-[!https://www.kaggle.com/code/alexandrgavrilenko/experiment-full-embed]
+[!https://www.kaggle.com/code/alexandrgavrilenko/experiment-full-embed/notebook?scriptVersionId=117684196]
 
 Использовались  все модели градиентого бустинга и также нейросеть на Табличных данных TabNet.
 
