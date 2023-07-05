@@ -20,7 +20,7 @@ To start using ProTDet, follow the steps below:
     ```bash
     conda create -n protdet_env python=3.10.11
     conda activate protdet_env
-    pip install requirements.txt
+    pip install -r requirements.txt
     ```
     
     This will create a new conda environment named protdet_env and install all the necessary dependencies specified in the requirements.txt
