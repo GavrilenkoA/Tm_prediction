@@ -46,24 +46,27 @@ To start using ProTDet, follow the steps below:
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/3b596bbb-d509-49b2-bbcb-459bedea7206)
 
+The majority of proteins in the dataset fall into the second category, characterized by a denaturation temperature ranging from 40 to 60 degrees.
+
 3. [feature_distribution.ipynb](./process_data/feature_distribution.ipynb)
+
 We have computed the distributions of primary and tertiary structure features for proteins based on their ordinal category of denaturation temperature.
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/4a46d603-fdee-488a-b87f-28dc10a92b06)
+
 Proteins exhibiting higher denaturation temperatures are typically associated with shorter sequence lengths.
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/cc9eda02-b9a0-4746-aa43-993181f35ccf)
+
 Proteins with a lower denaturation temperature tend to have a higher occurrence of polar amino acids.
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/59cca46c-d581-4072-a4d1-a22860668de8)
+
 Proteins with a high denaturation temperature more often include hydrophobic amino acids.
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/812de67b-2e26-4f64-9206-6243aa3afba4)
+
 Proteins with higher denaturation temperatures are more frequently composed of amino acids with a smaller free surface area.
-
-
-
-
 
 
 
