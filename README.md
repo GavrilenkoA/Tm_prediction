@@ -70,7 +70,7 @@ Proteins with higher denaturation temperatures are more frequently composed of a
 
 
 
-5. [eda_clusters.ipynb](./process_data/eda_clusters.ipynb): We performed clustering by aligning protein sequences with an identity threshold of 0.7. Subsequently, we calculated cumulative statistics regarding the number of clusters, considering the protein representation within each cluster.
+5. [eda_clusters.ipynb](./process_data/eda_clusters.ipynb): We performed clustering by aligning protein sequences with an identity threshold 	of 0.7. Subsequently, we calculated cumulative statistics regarding the number of clusters, considering the protein representation 	within each cluster.
 
    ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/5553ff9f-b594-47ce-801d-339a82fdcfb9)
 
