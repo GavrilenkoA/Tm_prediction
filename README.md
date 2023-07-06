@@ -119,7 +119,7 @@ The regression model training process involved multiple essential steps:
 | std             | 1.1909          | 0.0971          |  0.0086         | 0.0701          |  0.0048         |
 
 *Metrics on test data:*
-| MSE             | MSE             | RMSE            |  R^2            |  MAE            |  PCC            |         
+|---------------  | MSE             | RMSE            |  R^2            |  MAE            |  PCC            |         
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
 |                 |  33.23          | 5.76            | 0.70            | 4.25            |     0.84        |
 
