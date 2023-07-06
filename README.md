@@ -50,6 +50,7 @@ To start using ProTDet, follow the steps below:
 
 The majority of proteins in the dataset fall into the second category, characterized by a denaturation temperature ranging from 40 to 60 degrees.
 
+
 3. [feature_distribution.ipynb](./process_data/feature_distribution.ipynb): I have computed the distributions of primary and tertiary structure features for proteins based on their ordinal category of denaturation temperature.
 
 
@@ -83,6 +84,7 @@ b) [Test_dataset](./data/test_dataset.csv) - test data from [ProTstab2](https://
 
 _The dataset consists of protein embeddings as features and denaturation temperature as the target variable:_
 Due to large size, it can be downoloaded using script:
+
 	```bash
     	curl -L $(yadisk-direct https://disk.yandex.ru/d/GluGxaimz63NjA) -o data/blind_test.csv
      	curl -L $(yadisk-direct https://disk.yandex.ru/d/wtSquMEw3ZaPqw) -o data/train.csv
