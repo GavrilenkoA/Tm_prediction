@@ -38,8 +38,14 @@ To start using ProTDet, follow the steps below:
 	Replace <fasta_file> with the path to your FASTA file containing the protein sequence you want to analyze. The tool will 	process the sequence and generate a tm_prediction.txt file containing the predicted denaturation temperature.
 
 	Once the command completes execution, you will find the tm_prediction.txt file generated in the ROOT of directory. This file contains the predicted denaturation temperature for the provided protein sequence, along with the corresponding protein ID.
-   **Example**
-   	python3 inference/predict_tm.py data/protein.fasta out.txt
+
+   **Example command:**
+   
+   	python3 inference/predict_tm.py data/protein.fasta tm_prediction.txt
+
+The above command will process the protein sequence stored in the file protein_sequence.fasta and generate the corresponding tm_prediction.txt file.
+
+Important: Before running the command, make sure you have activated the protdet_env conda environment using the conda activate protdet_env command.
 
 ## EDA
 1. [wget_filter.ipynb](./process_data/wget_filter.ipynb): Obtaining preprocessed mass spectrometry-based data encompassing denaturation temperatures of 34,925 proteins from 13 model organisms - [Article.](https://www.nature.com/articles/s41592-020-0801-4 )
