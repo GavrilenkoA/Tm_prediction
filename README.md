@@ -48,7 +48,7 @@ To start using ProTDet, follow the steps below:
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/3b596bbb-d509-49b2-bbcb-459bedea7206)
 
-	The majority of proteins in the dataset fall into the second category, characterized by a denaturation temperature ranging from 40 to 	60 degrees.
+	The majority of proteins in the dataset fall into the second category, characterized by a denaturation temperature ranging from 40 to 	65 degrees celsius.
 
 
 3. [feature_distribution.ipynb](./process_data/feature_distribution.ipynb): I have computed the distributions of primary and tertiary structure features for proteins based on their ordinal category of denaturation temperature.
@@ -82,7 +82,7 @@ a) Evolutionary Scale Modeling [(ESM)](https://www.pnas.org/doi/full/10.1073/pna
 
 b) [Test_dataset](./data/test_dataset.csv) - test data from [ProTstab2](https://www.mdpi.com/1422-0067/23/18/10798) article.
 
-c) The dataset consists of protein embeddings as features and denaturation temperature as the target variable:_
+c) The datasets consist of protein embeddings as features and denaturation temperature as the target variable:_
 
 Due to large size, it can be downoloaded using script:
 
