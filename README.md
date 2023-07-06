@@ -40,9 +40,11 @@ To start using ProTDet, follow the steps below:
 	Once the command completes execution, you will find the tm_prediction.txt file generated in the ROOT of directory. This file contains the predicted melting temperature for the provided protein sequence, along with the corresponding protein ID.
 
 ## EDA
-1. [wget_filter.ipynb](./process_data/wget_filter.ipynb): Obtaining preprocessed mass spectrometry-based data encompassing melting temperatures of 34,925 proteins from 13 model organisms. To ensure data quality, duplicates were eliminated. Additionally, proteins longer than 1,020 amino acids were excluded as the transformer model has limitations on input sequence length.
+1. [wget_filter.ipynb](./process_data/wget_filter.ipynb): Obtaining preprocessed mass spectrometry-based data encompassing melting temperatures of 34,925 proteins from 13 model organisms. [Article]([https://www.nature.com/articles/s41592-020-0801-4 ])
 
-2. [clustering.ipynb](./process_data/clustering.ipynb): The data has been categorized into three ordinal groups based on denaturation temperature. I have also calculated the statistical count for each category.
+To ensure data quality, duplicates were eliminated. Additionally, proteins longer than 1,020 amino acids were excluded as the transformer model has limitations on input sequence length.
+
+3. [clustering.ipynb](./process_data/clustering.ipynb): The data has been categorized into three ordinal groups based on denaturation temperature. I have also calculated the statistical count for each category.
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/3b596bbb-d509-49b2-bbcb-459bedea7206)
 
