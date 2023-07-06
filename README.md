@@ -12,7 +12,7 @@ To start using ProTDet, follow the steps below:
 1. Clone the ProTDet repository by running the following command:
     
     ```bash
-    git clone git@github.com:GavrilenkoA/Tm_prediction.git
+    git clone https://github.com/GavrilenkoA/Tm_prediction.git
     ```
     
 2. Install the required dependencies by creating a new conda environment and activating it:
@@ -26,10 +26,10 @@ To start using ProTDet, follow the steps below:
     This will create a new conda environment named protdet_env and install all the necessary dependencies specified in the requirements.txt
     file.
     
-3. To launch the ProTDet tool and predict the denaturation temperature of a protein, use the following command:
+3. To launch the ProTDet tool and predict the denaturation temperature of a protein, use the following command in the ROOT directory:
     
     ```bash
-    python3 inference/predict_tm.py <fasta_file>
+    python3 inference/predict_tm.py <fasta_file> <output_file.txt>
     ```
     
 
@@ -38,6 +38,14 @@ To start using ProTDet, follow the steps below:
 	Replace <fasta_file> with the path to your FASTA file containing the protein sequence you want to analyze. The tool will 	process the sequence and generate a tm_prediction.txt file containing the predicted denaturation temperature.
 
 	Once the command completes execution, you will find the tm_prediction.txt file generated in the ROOT of directory. This file contains the predicted denaturation temperature for the provided protein sequence, along with the corresponding protein ID.
+
+   **Example command:**
+   
+   		python3 inference/predict_tm.py data/protein.fasta tm_prediction.txt
+
+	The above command will process the protein sequence stored in the file protein_sequence.fasta and generate the corresponding 	 tm_prediction.txt file.
+
+	Important: Before running the command, make sure you have activated the protdet_env conda environment using the conda activate protdet_env command.
 
 ## EDA
 1. [wget_filter.ipynb](./process_data/wget_filter.ipynb): Obtaining preprocessed mass spectrometry-based data encompassing denaturation temperatures of 34,925 proteins from 13 model organisms - [Article.](https://www.nature.com/articles/s41592-020-0801-4 )
@@ -77,12 +85,12 @@ Proteins with higher denaturation temperatures are more frequently composed of a
 
    ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/5553ff9f-b594-47ce-801d-339a82fdcfb9)
 
-#### Additional data
-a) Evolutionary Scale Modeling [(ESM)](https://www.pnas.org/doi/full/10.1073/pnas.2016239118)  - is a pretrained language model for proteins, was used to calculate embeddings for each protein in the dataset. The calculations were performed on a server, and the resulting embeddings can be found in a [embeddings](./data/embeddings) directory.
+#### Data
+a) [Test_dataset](./data/test_dataset.csv) - test data from [ProTstab2](https://www.mdpi.com/1422-0067/23/18/10798) article.
 
-b) [Test_dataset](./data/test_dataset.csv) - test data from [ProTstab2](https://www.mdpi.com/1422-0067/23/18/10798) article.
+Evolutionary Scale Modeling [(ESM)](https://www.pnas.org/doi/full/10.1073/pnas.2016239118)  - is a pretrained language model for proteins, was used to calculate embeddings for each protein in the data. The calculations were performed on a server, and the resulting embeddings are part of the training and test dataset and make up the features of proteins.
 
-c) The datasets consist of protein embeddings as features and denaturation temperature as the target variable:_
+b) The datasets include of protein embeddings as features and denaturation temperature as the target variable:
 
 Due to large size, it can be downoloaded using script:
 
@@ -96,7 +104,7 @@ Due to large size, it can be downoloaded using script:
 ## Training model
 [training.ipynb](./training/train_valid.ipynb)
 
-[TabNet](https://arxiv.org/abs/1908.07442), after undergoing numerous experiments, has consistently demonstrated superior performance compared to other models. This exceptional performance can be attributed to its unique attention mechanism, which empowers the model to effectively identify and leverage the most relevant features of the input data. By focusing on these crucial factors, TabNet enhances its predictive capabilities, resulting in significantly more accurate predictions.
+[TabNet](https://arxiv.org/abs/1908.07442) after undergoing numerous experiments, has consistently demonstrated superior performance compared to other models. This exceptional performance can be attributed to its unique attention mechanism, which empowers the model to effectively identify and leverage the most relevant features of the input data. By focusing on these crucial factors, TabNet enhances its predictive capabilities, resulting in significantly more accurate predictions.
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/f8b6ff7e-fbe8-4aa5-86e5-4f85cfcf26d0)
 
