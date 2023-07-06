@@ -78,11 +78,11 @@ Proteins with higher denaturation temperatures are more frequently composed of a
    ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/5553ff9f-b594-47ce-801d-339a82fdcfb9)
 
 #### Additional data
-a) Evolutionary Scale Modeling [(ESM)](https://www.pnas.org/doi/full/10.1073/pnas.2016239118)  - is a pretrained language model for proteins, was used to calculate embeddings for each protein in the dataset. The calculations were performed on a server, and the resulting embeddings can be found in a [embeddings](./data/embeddings) directory.
+a) [Test_dataset](./data/test_dataset.csv) - test data from [ProTstab2](https://www.mdpi.com/1422-0067/23/18/10798) article.
 
-b) [Test_dataset](./data/test_dataset.csv) - test data from [ProTstab2](https://www.mdpi.com/1422-0067/23/18/10798) article.
+Evolutionary Scale Modeling [(ESM)](https://www.pnas.org/doi/full/10.1073/pnas.2016239118)  - is a pretrained language model for proteins, was used to calculate embeddings for each protein in the data. The calculations were performed on a server, and the resulting embeddings are part of the training and test dataset and make up the features of proteins.
 
-c) The datasets consist of protein embeddings as features and denaturation temperature as the target variable:_
+b) The datasets include of protein embeddings as features and denaturation temperature as the target variable:
 
 Due to large size, it can be downoloaded using script:
 
@@ -96,7 +96,7 @@ Due to large size, it can be downoloaded using script:
 ## Training model
 [training.ipynb](./training/train_valid.ipynb)
 
-[TabNet](https://arxiv.org/abs/1908.07442), after undergoing numerous experiments, has consistently demonstrated superior performance compared to other models. This exceptional performance can be attributed to its unique attention mechanism, which empowers the model to effectively identify and leverage the most relevant features of the input data. By focusing on these crucial factors, TabNet enhances its predictive capabilities, resulting in significantly more accurate predictions.
+[TabNet](https://arxiv.org/abs/1908.07442) after undergoing numerous experiments, has consistently demonstrated superior performance compared to other models. This exceptional performance can be attributed to its unique attention mechanism, which empowers the model to effectively identify and leverage the most relevant features of the input data. By focusing on these crucial factors, TabNet enhances its predictive capabilities, resulting in significantly more accurate predictions.
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/f8b6ff7e-fbe8-4aa5-86e5-4f85cfcf26d0)
 
