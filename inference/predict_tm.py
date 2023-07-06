@@ -60,8 +60,8 @@ def clean_embed(embed_pattern: str = embed_pattern) -> None:
         os.remove(file)
 
 
-def print_file(melt_temperatures: list[float], labels: list[str]) -> None:
-    with open('tm_prediction.txt', 'w') as fi:
+def print_file(out_file: str, melt_temperatures: list[float], labels: list[str]) -> None:
+    with open(out_file, 'w') as fi:
         for id_, tm in zip(labels, melt_temperatures):
             fi.write(id_)
             fi.write('\n')
@@ -72,7 +72,7 @@ def print_file(melt_temperatures: list[float], labels: list[str]) -> None:
 def main():
     calculate_emb(args)
     melt_temperatures, labels = process_tensor()
-    print_file(melt_temperatures, labels)
+    print_file(args.out_file, melt_temperatures, labels)
     clean_embed()
 
 

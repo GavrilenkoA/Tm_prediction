@@ -24,6 +24,12 @@ def create_parser():
     )
 
     parser.add_argument(
+        "out_file",
+        type=pathlib.Path,
+        help="output txt file",
+    )
+
+    parser.add_argument(
         "--model_location",
         type=str,
         default="esm2_t33_650M_UR50D",
