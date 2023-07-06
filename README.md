@@ -3,7 +3,7 @@
 
 ### Description
 
-ProTDet is a machine learning tool designed to predict the melting temperature of proteins based on their sequence. It simplifies the process of accessing the thermostability of native proteins and provides an efficient solution for protein designers. With its advanced algorithms and accurate predictions, ProTDet empowers researchers and designers to make informed decisions in protein engineering and optimization.
+ProTDet is a machine learning tool designed to predict the temperature denaturation of proteins based on their sequence. It simplifies the process of accessing the thermostability of native proteins and provides an efficient solution for protein designers. With its advanced algorithms and accurate predictions, ProTDet empowers researchers and designers to make informed decisions in protein engineering and optimization.
 
 ### Usage
 
@@ -26,7 +26,7 @@ To start using ProTDet, follow the steps below:
     This will create a new conda environment named protdet_env and install all the necessary dependencies specified in the requirements.txt
     file.
     
-3. To launch the ProTDet tool and predict the melting temperature of a protein, use the following command:
+3. To launch the ProTDet tool and predict the denaturation temperature of a protein, use the following command:
     
     ```bash
     python3 inference/predict_tm.py <fasta_file>
@@ -35,12 +35,12 @@ To start using ProTDet, follow the steps below:
 
 	Note: Ensure that the FASTA file follows the standard format for protein sequences.
 
-	Replace <fasta_file> with the path to your FASTA file containing the protein sequence you want to analyze. The tool will 	process the sequence and generate a tm_prediction.txt file containing the predicted melting temperature.
+	Replace <fasta_file> with the path to your FASTA file containing the protein sequence you want to analyze. The tool will 	process the sequence and generate a tm_prediction.txt file containing the predicted denaturation temperature.
 
-	Once the command completes execution, you will find the tm_prediction.txt file generated in the ROOT of directory. This file contains the predicted melting temperature for the provided protein sequence, along with the corresponding protein ID.
+	Once the command completes execution, you will find the tm_prediction.txt file generated in the ROOT of directory. This file contains the predicted denaturation temperature for the provided protein sequence, along with the corresponding protein ID.
 
 ## EDA
-1. [wget_filter.ipynb](./process_data/wget_filter.ipynb): Obtaining preprocessed mass spectrometry-based data encompassing melting temperatures of 34,925 proteins from 13 model organisms - [Article.](https://www.nature.com/articles/s41592-020-0801-4 )
+1. [wget_filter.ipynb](./process_data/wget_filter.ipynb): Obtaining preprocessed mass spectrometry-based data encompassing denaturation temperatures of 34,925 proteins from 13 model organisms - [Article.](https://www.nature.com/articles/s41592-020-0801-4 )
 
 	To ensure data quality, duplicates were eliminated. Additionally, proteins longer than 1,020 amino acids were excluded as the transformer model has limitations on input sequence length.
 
