@@ -118,10 +118,9 @@ The regression model training process involved multiple essential steps:
 | std             | 1.1909          | 0.0971          |  0.0086         | 0.0701          |  0.0048         |
 
 *Metrics on test data:*
-| Column 1 Heade  | Column 1 Header | Column 1 Header | Column 2 Header |
-| --------------- | --------------- | --------------- | --------------- |
-| mean            | Row 1 Cell 2    | Row 1 Cell 3    | Row 1 Cell 3    |
-| std             | Row 2 Cell 2    | Row 2 Cell 3    |Row 2 Cell 3     |
+| MSE             | RMSE            |  R^2            |  MAE            |  PCC            |         
+| --------------- | --------------- | --------------- | --------------- | --------------- |
+|  33.23          | 5.76            | 0.70            | 4.25            |     0.84        |
 
 
    	
