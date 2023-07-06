@@ -56,7 +56,9 @@ To start using ProTDet, follow the steps below:
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/3b596bbb-d509-49b2-bbcb-459bedea7206)
 
-The majority of proteins in the dataset fall into the second category, characterized by a denaturation temperature ranging from 40 to 	65 degrees celsius.
+The majority of proteins in the dataset fall into the second category, characterized by a denaturation temperature ranging from 40 to 65 degrees celsius.
+![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/eeed7d7e-5f82-4b96-95f5-3bdab09ecb01)
+
 
 
 3. [feature_distribution.ipynb](./process_data/feature_distribution.ipynb): I have computed the distributions of primary and tertiary structure features for proteins based on their ordinal category of denaturation temperature.
