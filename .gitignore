@@ -36,7 +36,6 @@ data/filtered_data.csv
 data/merged_data.csv
 data/train.csv
 data/Hyperthermophilic.fasta
-tm_prediction.txt
  
 
 
