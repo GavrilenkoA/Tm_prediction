@@ -82,6 +82,12 @@ a) Evolutionary Scale Modeling [(ESM)](https://www.pnas.org/doi/full/10.1073/pna
 b) [Test_dataset](./data/test_dataset.csv) - test data from [ProTstab2](https://www.mdpi.com/1422-0067/23/18/10798) article.
 
 _The dataset consists of protein embeddings as features and denaturation temperature as the target variable:_
+Due to large size, it can be downoloaded using script:
+	```bash
+    	curl -L $(yadisk-direct https://disk.yandex.ru/d/GluGxaimz63NjA) -o data/blind_test.csv
+     	curl -L $(yadisk-direct https://disk.yandex.ru/d/wtSquMEw3ZaPqw) -o data/train.csv
+    	```
+
 
 
 
