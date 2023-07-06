@@ -80,16 +80,15 @@ TabNet, after undergoing numerous experiments, has consistently demonstrated sup
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/f8b6ff7e-fbe8-4aa5-86e5-4f85cfcf26d0)
 
 The regression model training process involved multiple essential steps:
+1. Hyperparameter Selection: Optuna was utilized to carefully select the optimal hyperparameters for the model. This thorough optimization process aids in maximizing the model's performance by fine-tuning key parameters.
 
-    Hyperparameter Selection: Optuna was utilized to carefully select the optimal hyperparameters for the model. This thorough optimization process aids in maximizing the model's performance by fine-tuning key parameters.
+2. Dataset Splitting: The training and validation samples were split using the train_test_split technique. This separation allows for evaluating the model's performance on unseen data and helps prevent overfitting.
 
-    Dataset Splitting: The training and validation samples were split using the train_test_split technique. This separation allows for evaluating the model's performance on unseen data and helps prevent overfitting.
+3. Hyperparameter Fine-Tuning: Once the best-performing hyperparameters were determined, they were fixed to ensure consistent and optimal model quality throughout the training process.
 
-    Hyperparameter Fine-Tuning: Once the best-performing hyperparameters were determined, they were fixed to ensure consistent and optimal model quality throughout the training process.
+4. Cross-Validation: To account for evolutionary similarity and denaturation temperature of proteins, a cross-validation approach was employed. The dataset was partitioned, and a family of models was trained on each partition. This methodology helps capture the inherent variations within the data and enhances the model's robustness.
 
-    Cross-Validation: To account for evolutionary similarity and denaturation temperature of proteins, a cross-validation approach was employed. The dataset was partitioned, and a family of models was trained on each partition. This methodology helps capture the inherent variations within the data and enhances the model's robustness.
-
-    Metric Calculation: Metrics were calculated based on the validation and test samples to assess the performance of the trained models. These metrics provide valuable insights into how well the models generalize to unseen data and inform decisions regarding model selection and optimization.
+5. Metric Calculation: Metrics were calculated based on the validation and test samples to assess the performance of the trained models. These metrics provide valuable insights into how well the models generalize to unseen data and inform decisions regarding model selection and optimization.
 
 
 
