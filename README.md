@@ -57,7 +57,7 @@ To start using ProTDet, follow the steps below:
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/3b596bbb-d509-49b2-bbcb-459bedea7206)
 
 The majority of proteins in the dataset fall into the second category, characterized by a denaturation temperature ranging from 40 to 65 degrees celsius.
-![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/eeed7d7e-5f82-4b96-95f5-3bdab09ecb01)
+
 
 
 
@@ -84,6 +84,8 @@ Proteins with higher denaturation temperatures are more frequently composed of a
 
 
 5. [eda_clusters.ipynb](./process_data/eda_clusters.ipynb): I have clustered evolutional clusters by aligning protein sequences with an identity threshold of 0.7. I calculated cumulative statistics regarding the number of clusters, considering the protein representation 	within each cluster. Subsequently, the training and test data were carefully selected for the evaluation of the model. Notably, the test data was specifically chosen to perfectly align with the [ProTstab2](https://www.mdpi.com/1422-0067/23/18/10798) that the model will be compared against.
+
+   ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/eeed7d7e-5f82-4b96-95f5-3bdab09ecb01)
 
    ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/5553ff9f-b594-47ce-801d-339a82fdcfb9)
 
