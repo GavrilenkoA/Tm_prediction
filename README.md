@@ -79,7 +79,8 @@ Proteins with higher denaturation temperatures are more frequently composed of a
 #### Additional data
 a) Evolutionary Scale Modeling [(ESM)](https://www.pnas.org/doi/full/10.1073/pnas.2016239118)  - is a pretrained language model for proteins, was used to calculate embeddings for each protein in the dataset. The calculations were performed on a server, and the resulting embeddings can be found in a [embeddings](./data/embeddings) directory.
 b) [Test_dataset](./data/test_dataset.csv) - test dataset from [ProTstab2](https://www.mdpi.com/1422-0067/23/18/10798) article.
-_The dataset consists of protein embeddings as features and denaturation temperature as the target variable._
+
+_The dataset consists of protein embeddings as features and denaturation temperature as the target variable:_
 
 
 
