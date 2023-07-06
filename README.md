@@ -86,10 +86,9 @@ _The dataset consists of protein embeddings as features and denaturation tempera
 
 Due to large size, it can be downoloaded using script:
 
-	```
     	curl -L $(yadisk-direct https://disk.yandex.ru/d/GluGxaimz63NjA) -o data/blind_test.csv
      	curl -L $(yadisk-direct https://disk.yandex.ru/d/wtSquMEw3ZaPqw) -o data/train.csv
-    	```
+    	
 
 
 
