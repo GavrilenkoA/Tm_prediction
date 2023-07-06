@@ -1,6 +1,7 @@
 data/junk
 data/esm_embed
 data/some_proteins_emb_esm2.zip
+data/embeddings
 pdb/
 process_data/junk_code
 process_data/.ipynb_checkpoints
@@ -34,7 +35,9 @@ data/ex_out.clstr
 data/filtered_data.csv
 data/merged_data.csv
 data/train.csv
+data/Hyperthermophilic.fasta
 tm_prediction.txt
+ 
 
 
 
