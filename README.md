@@ -110,6 +110,21 @@ The regression model training process involved multiple essential steps:
 4. Cross-Validation: To account for evolutionary similarity and denaturation temperature of proteins, a cross-validation approach was employed. The dataset was partitioned, and a family of models was trained on each partition. This methodology helps capture the inherent variations within the data and enhances the model's robustness.
 
 5. Metric Calculation: Metrics were calculated based on the validation and test samples to assess the performance of the trained models. These metrics provide valuable insights into how well the models generalize to unseen data and inform decisions regarding model selection and optimization.
+*Metrics on validation data:*
+|                 | MSE             | RMSE            |  R^2            |  MAE            |  PCC            |         
+| --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
+| mean            |  37.56          | 6.12            | 0.68            | 4.55            |  0.83           |
+| std             | 1.1909          | 0.0971          |  0.0086         | 0.0701          |  0.0048         |
+
+*Metrics on test data:*
+| Column 1 Heade  | Column 1 Header | Column 1 Header | Column 2 Header |
+| --------------- | --------------- | --------------- | --------------- |
+| mean            | Row 1 Cell 2    | Row 1 Cell 3    | Row 1 Cell 3    |
+| std             | Row 2 Cell 2    | Row 2 Cell 3    |Row 2 Cell 3     |
+
+
+   	
+   
 
 
 
