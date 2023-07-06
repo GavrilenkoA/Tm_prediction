@@ -42,9 +42,9 @@ To start using ProTDet, follow the steps below:
 ## EDA
 1. [wget_filter.ipynb](./process_data/wget_filter.ipynb): Obtaining preprocessed mass spectrometry-based data encompassing melting temperatures of 34,925 proteins from 13 model organisms. [Article.](https://www.nature.com/articles/s41592-020-0801-4 )
 
-To ensure data quality, duplicates were eliminated. Additionally, proteins longer than 1,020 amino acids were excluded as the transformer model has limitations on input sequence length.
+	To ensure data quality, duplicates were eliminated. Additionally, proteins longer than 1,020 amino acids were excluded as the transformer model has limitations on input sequence length.
 
-3. [clustering.ipynb](./process_data/clustering.ipynb): The data has been categorized into three ordinal groups based on denaturation temperature. I have also calculated the statistical count for each category.
+3. [clustering.ipynb](./process_data/clustering.ipynb): The data has been categorized into three ordinal groups based on denaturation temperature. I have also calculated the count distribution for each category.
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/3b596bbb-d509-49b2-bbcb-459bedea7206)
 
@@ -75,6 +75,9 @@ Proteins with higher denaturation temperatures are more frequently composed of a
 5. [eda_clusters.ipynb](./process_data/eda_clusters.ipynb): I have clustered evolutional clusters by aligning protein sequences with an identity threshold of 0.7. Subsequently, I calculated cumulative statistics regarding the number of clusters, considering the protein representation 	within each cluster.
 
    ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/5553ff9f-b594-47ce-801d-339a82fdcfb9)
+
+### Additional data
+Evolutionary Scale Modeling (ESM)  - is a pretrained language model for proteins, was used to calculate embeddings for each protein in the dataset. The calculations were performed on a cluster, and the resulting embeddings can be found in a [embeddings](./data/embeddings) directory.
 
 ## Training model
 [training.ipynb](./training/train_valid.ipynb)
