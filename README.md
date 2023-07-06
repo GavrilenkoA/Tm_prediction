@@ -70,9 +70,27 @@ Proteins with higher denaturation temperatures are more frequently composed of a
 
 
 
-5. [eda_clusters.ipynb](./process_data/eda_clusters.ipynb): We performed clustering by aligning protein sequences with an identity threshold 	of 0.7. Subsequently, we calculated cumulative statistics regarding the number of clusters, considering the protein representation 	within each cluster.
+5. [eda_clusters.ipynb](./process_data/eda_clusters.ipynb): I have clustered evolutional clusters by aligning protein sequences with an identity threshold of 0.7. Subsequently, I calculated cumulative statistics regarding the number of clusters, considering the protein representation 	within each cluster.
 
    ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/5553ff9f-b594-47ce-801d-339a82fdcfb9)
+
+## Training model
+[training.ipynb](./train_valid/training.ipynb) TabNet, after undergoing numerous experiments, has consistently demonstrated superior performance compared to other models. This exceptional performance can be attributed to its unique attention mechanism, which empowers the model to effectively identify and leverage the most relevant features of the input data. By focusing on these crucial factors, TabNet enhances its predictive capabilities, resulting in significantly more accurate predictions.
+
+![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/f8b6ff7e-fbe8-4aa5-86e5-4f85cfcf26d0)
+
+The regression model training process involved multiple essential steps:
+1. Hyperparameter Selection: Optuna was utilized to carefully select the optimal hyperparameters for the model. This thorough optimization process aids in maximizing the model's performance by fine-tuning key parameters.
+
+2. Dataset Splitting: The training and validation samples were split using the train_test_split technique. This separation allows for evaluating the model's performance on unseen data and helps prevent overfitting.
+
+3. Hyperparameter Fine-Tuning: Once the best-performing hyperparameters were determined, they were fixed to ensure consistent and optimal model quality throughout the training process.
+
+4. Cross-Validation: To account for evolutionary similarity and denaturation temperature of proteins, a cross-validation approach was employed. The dataset was partitioned, and a family of models was trained on each partition. This methodology helps capture the inherent variations within the data and enhances the model's robustness.
+
+5. Metric Calculation: Metrics were calculated based on the validation and test samples to assess the performance of the trained models. These metrics provide valuable insights into how well the models generalize to unseen data and inform decisions regarding model selection and optimization.
+
+
 
 
 
