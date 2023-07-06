@@ -12,7 +12,7 @@ To start using ProTDet, follow the steps below:
 1. Clone the ProTDet repository by running the following command:
     
     ```bash
-    git clone git@github.com:GavrilenkoA/Tm_prediction.git
+    git clone https://github.com/GavrilenkoA/Tm_prediction.git
     ```
     
 2. Install the required dependencies by creating a new conda environment and activating it:
