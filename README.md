@@ -50,7 +50,7 @@ To start using ProTDet, follow the steps below:
 
 The majority of proteins in the dataset fall into the second category, characterized by a denaturation temperature ranging from 40 to 60 degrees.
 
-3. [feature_distribution.ipynb](./process_data/feature_distribution.ipynb): We have computed the distributions of primary and tertiary structure features for proteins based on their ordinal category of denaturation temperature.
+3. [feature_distribution.ipynb](./process_data/feature_distribution.ipynb): I have computed the distributions of primary and tertiary structure features for proteins based on their ordinal category of denaturation temperature.
 
 
 
@@ -72,12 +72,16 @@ Proteins with higher denaturation temperatures are more frequently composed of a
 
 
 
-5. [eda_clusters.ipynb](./process_data/eda_clusters.ipynb): I have clustered evolutional clusters by aligning protein sequences with an identity threshold of 0.7. Subsequently, I calculated cumulative statistics regarding the number of clusters, considering the protein representation 	within each cluster.
+5. [eda_clusters.ipynb](./process_data/eda_clusters.ipynb): I have clustered evolutional clusters by aligning protein sequences with an identity threshold of 0.7. I calculated cumulative statistics regarding the number of clusters, considering the protein representation 	within each cluster. Subsequently, the training and test data were carefully selected for the evaluation of the model. Notably, the test data was specifically chosen to perfectly align with the [ProTstab2](https://www.mdpi.com/1422-0067/23/18/10798) that the model will be compared against. This meticulous matching ensures a fair and accurate comparison between the model's performance and the article's content.
 
    ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/5553ff9f-b594-47ce-801d-339a82fdcfb9)
 
-### Additional data
-Evolutionary Scale Modeling [(ESM)](https://www.pnas.org/doi/full/10.1073/pnas.2016239118)  - is a pretrained language model for proteins, was used to calculate embeddings for each protein in the dataset. The calculations were performed on a cluster, and the resulting embeddings can be found in a [embeddings](./data/embeddings) directory.
+#### Additional data
+a) Evolutionary Scale Modeling [(ESM)](https://www.pnas.org/doi/full/10.1073/pnas.2016239118)  - is a pretrained language model for proteins, was used to calculate embeddings for each protein in the dataset. The calculations were performed on a server, and the resulting embeddings can be found in a [embeddings](./data/embeddings) directory.
+b) [Test_dataset](./data/test_dataset.csv) - test dataset from [ProTstab2](https://www.mdpi.com/1422-0067/23/18/10798) article.
+**The dataset consists of protein embeddings as features and denaturation temperature as the target variable.**
+
+
 
 ## Training model
 [training.ipynb](./training/train_valid.ipynb)
