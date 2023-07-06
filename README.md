@@ -111,7 +111,7 @@ The regression model training process involved multiple essential steps:
 
 5. Metric Calculation: Metrics were calculated based on the validation and test samples to assess the performance of the trained models. These metrics provide valuable insights into how well the models generalize to unseen data and inform decisions regarding model selection and optimization.
 
-## Model's peformance
+## Model peformance
 *Metrics on validation data:*
 
 |                 | MSE             | RMSE            |  R^2            |  MAE            |  PCC            |         
