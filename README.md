@@ -52,7 +52,7 @@ To start using ProTDet, follow the steps below:
 
 	To ensure data quality, duplicates were eliminated. Additionally, proteins longer than 1,020 amino acids were excluded as the transformer model has limitations on input sequence length.
 
-3. [clustering.ipynb](./process_data/clustering.ipynb): The data has been categorized into three ordinal groups based on melting temperature. I have also calculated the count distribution for each category.
+3. [tm_grouped.ipynb](./process_data/tm_grouped.ipynb): The data has been categorized into three ordinal groups based on melting temperature. I have also calculated the count distribution for each category.
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/3b596bbb-d509-49b2-bbcb-459bedea7206)
 
