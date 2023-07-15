@@ -5,7 +5,7 @@
 
 ProTDet is a machine learning tool designed to predict the melting temperature of proteins based on their sequence. It simplifies the process of accessing the thermostability of native proteins and provides an efficient solution for protein designers. With its advanced algorithms and accurate predictions, ProTDet empowers researchers and designers to make informed decisions in protein engineering and optimization.
 ### Collab usage
-*Best variant fastly predict the melting temperature of your protein*
+*The best variant fastly predict the melting temperature of your protein*
 
 
 [ProTDet_collab](https://colab.research.google.com/drive/1O58rO4bye8HuVxTxftL-oqqqYipc3daf#scrollTo=oPHJFPDNCxy0)
