@@ -8,7 +8,7 @@ ProTDet is a machine learning tool designed to predict the melting temperature o
 *The best variant fastly predict the melting temperature of your protein*
 
 
-[ProTDet_collab](https://colab.research.google.com/drive/1O58rO4bye8HuVxTxftL-oqqqYipc3daf#scrollTo=oPHJFPDNCxy0)
+[ProTDet_colab](https://colab.research.google.com/drive/1O58rO4bye8HuVxTxftL-oqqqYipc3daf#scrollTo=oPHJFPDNCxy0)
 
 ### Local usage
 
