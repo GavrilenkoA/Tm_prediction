@@ -5,7 +5,7 @@ matplotlib==3.7.1
 numpy==1.23.5
 pandas==2.0.2
 pytorch-tabnet==4.0
-scipy==1.11.1
+scipy==1.10.1
 tqdm==4.65.0
 seaborn==0.12.2
 wldhx.yadisk-direct==0.0.6
