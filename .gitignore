@@ -16,26 +16,6 @@ dssp/
 photos/
 model/.ipynb_checkpoints
 train_valid/.ipynb_checkpoints
-data/Hyperthermophilic.fasta
-data/Hyperthermophiliccd_hit_out
-data/Hyperthermophiliccd_hit_out.clstr
-data/Mesophilic.fasta
-data/Mesophiliccd_hit_out
-data/Mesophiliccd_hit_out.clstr
-data/ProTstab_data.xlsx
-data/Thermophilic.fasta
-data/Thermophiliccd_hit_out
-data/Thermophiliccd_hit_out.clstr
-data/blind_test.csv
-data/dataset.zip
-data/dataset/
-data/ex.csv
-data/ex_out
-data/ex_out.clstr
-data/filtered_data.csv
-data/merged_data.csv
-data/train.csv
-data/Hyperthermophilic.fasta
  
 
 
