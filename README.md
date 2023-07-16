@@ -3,9 +3,14 @@
 
 ### Description
 
-ProTDet is a machine learning tool designed to predict the temperature melting of proteins based on their sequence. It simplifies the process of accessing the thermostability of native proteins and provides an efficient solution for protein designers. With its advanced algorithms and accurate predictions, ProTDet empowers researchers and designers to make informed decisions in protein engineering and optimization.
+ProTDet is a machine learning tool designed to predict the melting temperature of proteins based on their sequence. It simplifies the process of accessing the thermostability of native proteins and provides an efficient solution for protein designers. With its advanced algorithms and accurate predictions, ProTDet empowers researchers and designers to make informed decisions in protein engineering and optimization.
+### Collab usage
+*The best variant fastly predict the melting temperature of your protein*
 
-### Usage
+
+[ProTDet_collab](https://colab.research.google.com/drive/1O58rO4bye8HuVxTxftL-oqqqYipc3daf#scrollTo=oPHJFPDNCxy0)
+
+### Local usage
 
 To start using ProTDet, follow the steps below:
 
@@ -52,7 +57,7 @@ To start using ProTDet, follow the steps below:
 
 	To ensure data quality, duplicates were eliminated. Additionally, proteins longer than 1,020 amino acids were excluded as the transformer model has limitations on input sequence length.
 
-3. [clustering.ipynb](./process_data/clustering.ipynb): The data has been categorized into three ordinal groups based on melting temperature. I have also calculated the count distribution for each category.
+3. [tm_grouped.ipynb](./process_data/tm_grouped.ipynb): The data has been categorized into three ordinal groups based on melting temperature. I have also calculated the count distribution for each category.
 
 ![image](https://github.com/GavrilenkoA/Tm_prediction/assets/92908421/3b596bbb-d509-49b2-bbcb-459bedea7206)
 
@@ -98,8 +103,8 @@ b) The datasets include of protein embeddings as features and melting temperatur
 
 Due to large size, it can be downoloaded using script:
 
-    	curl -L $(yadisk-direct https://disk.yandex.ru/d/GluGxaimz63NjA) -o data/blind_test.csv
-     	curl -L $(yadisk-direct https://disk.yandex.ru/d/wtSquMEw3ZaPqw) -o data/train.csv
+    	curl -L $(yadisk-direct https://disk.yandex.ru/d/GluGxaimz63NjA) -o data/train.csv 
+     	curl -L $(yadisk-direct https://disk.yandex.ru/d/wtSquMEw3ZaPqw) -o data/blind_test.csv
     	
 
 
